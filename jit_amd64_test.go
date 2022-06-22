@@ -95,6 +95,7 @@ func TestRecursiveFunctionCalls(t *testing.T) {
 			eng.exec(compiledFunc)
 		}()
 	}
+	wg.Wait()
 }
 
 // Test perform operations on
